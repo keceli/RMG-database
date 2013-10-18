@@ -19,11 +19,11 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,S}
-4    C 0 {3,S} {5,S}
-5    O 0 {4,S}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S} {4,S}
+3    C 0 {1,S} {5,S}
+4 *3 C 1 {2,S}
+5    O 0 {3,S}
 """,
     product1 = 
 """
@@ -41,12 +41,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (5.76,"cm^3/(mol*s)"),
+        A = (5.76, 'cm^3/(mol*s)'),
         n = 3.16,
-        Ea = (0.75,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (0.75, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -86,11 +86,11 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S}
-3    C 0 {2,S} {4,S}
-4    C 0 {3,S} {5,S}
-5    O 0 {4,S}
+1    C 0 {2,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {3,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
@@ -108,12 +108,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.35,"cm^3/(mol*s)"),
+        A = (1.35, 'cm^3/(mol*s)'),
         n = 3.42,
-        Ea = (1.43,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.43, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -153,11 +153,11 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3 *3 C 1 {2,S} {4,S}
-4    C 0 {3,S} {5,S}
-5    O 0 {4,S}
+1    C 0 {3,S} {4,S}
+2    C 0 {4,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {2,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
@@ -175,12 +175,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.629,"cm^3/(mol*s)"),
+        A = (0.629, 'cm^3/(mol*s)'),
         n = 3.52,
-        Ea = (1.61,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.61, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -220,10 +220,10 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,S}
-4 *3 C 1 {3,S} {5,S}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S} {4,S}
+3    C 0 {1,S}
+4 *3 C 1 {2,S} {5,S}
 5    O 0 {4,S}
 """,
     product1 = 
@@ -242,12 +242,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2.97,"cm^3/(mol*s)"),
+        A = (2.97, 'cm^3/(mol*s)'),
         n = 3.39,
-        Ea = (1.4,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.4, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -287,11 +287,11 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,S} {5,S}
-4    C 0 {3,S}
-5    O 0 {3,S}
+1    C 0 {2,S} {3,S} {5,S}
+2    C 0 {1,S} {4,S}
+3    C 0 {1,S}
+4 *3 C 1 {2,S}
+5    O 0 {1,S}
 """,
     product1 = 
 """
@@ -309,12 +309,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (11.5,"cm^3/(mol*s)"),
+        A = (11.5, 'cm^3/(mol*s)'),
         n = 2.94,
-        Ea = (0.46,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (0.46, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -346,11 +346,11 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S}
-3    C 0 {2,S} {4,S} {5,S}
-4    C 0 {3,S}
-5    O 0 {3,S}
+1    C 0 {2,S} {4,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {3,S}
+5    O 0 {1,S}
 """,
     product1 = 
 """
@@ -368,12 +368,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.75,"cm^3/(mol*s)"),
+        A = (1.75, 'cm^3/(mol*s)'),
         n = 2.91,
-        Ea = (-0.41,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-0.41, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -405,11 +405,11 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3 *3 C 1 {2,S} {4,S} {5,S}
-4    C 0 {3,S}
-5    O 0 {3,S}
+1    C 0 {2,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {3,S} {5,S}
+5    O 0 {4,S}
 """,
     product1 = 
 """
@@ -427,12 +427,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (34.6,"cm^3/(mol*s)"),
+        A = (34.6, 'cm^3/(mol*s)'),
         n = 3.05,
-        Ea = (1.02,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.02, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -464,11 +464,11 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,S} {5,S}
-4 *3 C 1 {3,S}
-5    O 0 {3,S}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S} {4,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {2,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
@@ -486,12 +486,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.611,"cm^3/(mol*s)"),
+        A = (0.611, 'cm^3/(mol*s)'),
         n = 3.53,
-        Ea = (1.52,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.52, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -524,9 +524,9 @@ entry(
     reactant2 = 
 """
 1    C 0 {2,S} {3,S} {4,S} {5,S}
-2 *3 C 1 {1,S}
+2    C 0 {1,S}
 3    C 0 {1,S}
-4    C 0 {1,S}
+4 *3 C 1 {1,S}
 5    O 0 {1,S}
 """,
     product1 = 
@@ -545,12 +545,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.42,"cm^3/(mol*s)"),
+        A = (0.42, 'cm^3/(mol*s)'),
         n = 3.53,
-        Ea = (1.56,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.56, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -582,10 +582,10 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product1 = 
 """
@@ -594,20 +594,20 @@ entry(
 """,
     product2 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.0613,"cm^3/(mol*s)"),
+        A = (0.0613, 'cm^3/(mol*s)'),
         n = 3.95,
-        Ea = (12.22,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (12.22, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -642,24 +642,24 @@ entry(
     index = 501,
     reactant1 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {4,S}
-3    C 0 {2,S}
-4 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S}
-3    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,S}
+3 *3 C 1 {1,S} {2,S}
 """,
     product2 = 
 """
@@ -672,12 +672,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (1.822e-06,"cm^3/(mol*s)"),
+        A = (1.822e-06, 'cm^3/(mol*s)'),
         n = 5.11,
-        Ea = (5.69,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (5.69, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -713,33 +713,33 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S}
-3    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,S}
+3 *3 C 1 {1,S} {2,S}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {4,S}
-3    C 0 {2,S}
-4 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *2 H 0 {1,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2.12e-06,"cm^3/(mol*s)"),
+        A = (2.12e-06, 'cm^3/(mol*s)'),
         n = 5.06,
-        Ea = (4.89,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (4.89, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -766,26 +766,26 @@ entry(
     index = 503,
     reactant1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product2 = 
 """
@@ -798,12 +798,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (5.034e-05,"cm^3/(mol*s)"),
+        A = (5.034e-05, 'cm^3/(mol*s)'),
         n = 4.89,
-        Ea = (4.32,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (4.32, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -830,26 +830,26 @@ entry(
     index = 504,
     reactant1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product2 = 
 """
@@ -862,12 +862,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (8.64e-05,"cm^3/(mol*s)"),
+        A = (8.64e-05, 'cm^3/(mol*s)'),
         n = 4.52,
-        Ea = (1.46,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.46, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -894,26 +894,26 @@ entry(
     index = 505,
     reactant1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product2 = 
 """
@@ -926,12 +926,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (2.946e-05,"cm^3/(mol*s)"),
+        A = (2.946e-05, 'cm^3/(mol*s)'),
         n = 5.07,
-        Ea = (3.66,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.66, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -958,26 +958,26 @@ entry(
     index = 506,
     reactant1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4 *3 O 1 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {5,S}
+4    C 0 {1,S}
+5 *3 O 1 {3,S}
 """,
     product1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product2 = 
 """
@@ -990,12 +990,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (3.498,"cm^3/(mol*s)"),
+        A = (3.498, 'cm^3/(mol*s)'),
         n = 3.74,
-        Ea = (1.45,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.45, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1029,17 +1029,17 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D}
+1    C 0 {2,S} {3,D}
+2 *3 C 1 {1,S}
+3    C 0 {1,D}
 """,
     product2 = 
 """
@@ -1052,12 +1052,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (0.0001008,"cm^3/(mol*s)"),
+        A = (0.0001008, 'cm^3/(mol*s)'),
         n = 4.75,
-        Ea = (4.13,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (4.13, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1095,17 +1095,17 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D}
+1    C 0 {2,S} {3,D}
+2 *3 C 1 {1,S}
+3    C 0 {1,D}
 """,
     product2 = 
 """
@@ -1118,12 +1118,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (4.92e-06,"cm^3/(mol*s)"),
+        A = (4.92e-06, 'cm^3/(mol*s)'),
         n = 4.98,
-        Ea = (3.18,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.18, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1161,17 +1161,17 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D}
+1    C 0 {2,S} {3,D}
+2 *3 C 1 {1,S}
+3    C 0 {1,D}
 """,
     product2 = 
 """
@@ -1184,12 +1184,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (9.33e-06,"cm^3/(mol*s)"),
+        A = (9.33e-06, 'cm^3/(mol*s)'),
         n = 4.97,
-        Ea = (3.64,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.64, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1223,17 +1223,17 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4 *3 O 1 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {5,S}
+4    C 0 {1,S}
+5 *3 O 1 {3,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D}
+1    C 0 {2,S} {3,D}
+2 *3 C 1 {1,S}
+3    C 0 {1,D}
 """,
     product2 = 
 """
@@ -1246,12 +1246,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (0.357,"cm^3/(mol*s)"),
+        A = (0.357, 'cm^3/(mol*s)'),
         n = 3.9,
-        Ea = (1.81,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.81, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1284,16 +1284,16 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S}
+1    C 0 {2,S}
+2 *3 C 1 {1,S}
 """,
     product2 = 
 """
@@ -1306,12 +1306,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (1.926e-05,"cm^3/(mol*s)"),
+        A = (1.926e-05, 'cm^3/(mol*s)'),
         n = 5.28,
-        Ea = (7.78,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (7.78, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1351,16 +1351,16 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S}
+1    C 0 {2,S}
+2 *3 C 1 {1,S}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product2 = 
 """
@@ -1370,12 +1370,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (1.41e-05,"cm^3/(mol*s)"),
+        A = (1.41e-05, 'cm^3/(mol*s)'),
         n = 4.83,
-        Ea = (4.37,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (4.37, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1415,16 +1415,16 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S}
+1    C 0 {2,S}
+2 *3 C 1 {1,S}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product2 = 
 """
@@ -1434,12 +1434,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (8.5e-06,"cm^3/(mol*s)"),
+        A = (8.5e-06, 'cm^3/(mol*s)'),
         n = 5.01,
-        Ea = (5.01,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (5.01, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1472,16 +1472,16 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4 *3 O 1 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {5,S}
+4    C 0 {1,S}
+5 *3 O 1 {3,S}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S}
+1    C 0 {2,S}
+2 *3 C 1 {1,S}
 """,
     product2 = 
 """
@@ -1494,12 +1494,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (0.03042,"cm^3/(mol*s)"),
+        A = (0.03042, 'cm^3/(mol*s)'),
         n = 4.52,
-        Ea = (2.34,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (2.34, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1535,16 +1535,16 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,D}
-2    C 0 {1,D}
+1    C 0 {2,D}
+2 *3 C 1 {1,D}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product2 = 
 """
@@ -1554,12 +1554,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (5.49,"cm^3/(mol*s)"),
+        A = (5.49, 'cm^3/(mol*s)'),
         n = 3.33,
-        Ea = (0.63,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (0.63, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1599,33 +1599,33 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,D}
-2 *3 C 1 {1,D} {3,S}
-3    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,D}
+3 *3 C 1 {1,S} {2,D}
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S}
+5    O 0 {2,S}
 """,
     product2 = 
 """
-1    C 0 {2,D}
-2 *1 C 0 {1,D} {3,S} {4,S}
-3    C 0 {2,S}
+1    C 0 {2,S}
+2 *1 C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
 4 *2 H 0 {2,S}
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (0.0001866,"cm^3/(mol*s)"),
+        A = (0.0001866, 'cm^3/(mol*s)'),
         n = 4.87,
-        Ea = (3.5,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.5, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1661,33 +1661,33 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,D}
-2 *3 C 1 {1,D} {3,S}
-3    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,D}
+3 *3 C 1 {1,S} {2,D}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product2 = 
 """
-1    C 0 {2,D}
-2 *1 C 0 {1,D} {3,S} {4,S}
-3    C 0 {2,S}
+1    C 0 {2,S}
+2 *1 C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
 4 *2 H 0 {2,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.0256,"cm^3/(mol*s)"),
+        A = (0.0256, 'cm^3/(mol*s)'),
         n = 4.09,
-        Ea = (1.31,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (1.31, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1714,19 +1714,19 @@ entry(
     index = 518,
     reactant1 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,D}
-4    O 0 {3,D}
-5 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {5,D}
+4 *2 H 0 {1,S}
+5    O 0 {3,D}
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S} {5,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S}
+5    O 0 {2,S}
 """,
     product1 = 
 """
@@ -1746,12 +1746,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.000312,"cm^3/(mol*s)"),
+        A = (0.000312, 'cm^3/(mol*s)'),
         n = 4.31,
-        Ea = (3.39,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.39, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1794,11 +1794,11 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product2 = 
 """
@@ -1810,12 +1810,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (0.000485,"cm^3/(mol*s)"),
+        A = (0.000485, 'cm^3/(mol*s)'),
         n = 4.37,
-        Ea = (9.66,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (9.66, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1858,28 +1858,28 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S} {5,S}
-3 *3 C 1 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *3 C 1 {1,S} {5,S}
+5    O 0 {4,S}
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,D}
-4    O 0 {3,D}
-5 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {5,D}
+4 *2 H 0 {1,S}
+5    O 0 {3,D}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.00368,"cm^3/(mol*s)"),
+        A = (0.00368, 'cm^3/(mol*s)'),
         n = 4.02,
-        Ea = (7.92,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (7.92, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1906,12 +1906,12 @@ entry(
     index = 521,
     reactant1 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {5,S} {6,S}
-3    C 0 {2,S} {4,D}
-4    O 0 {3,D}
-5    C 0 {2,S}
-6 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4    C 0 {1,S} {6,D}
+5 *2 H 0 {1,S}
+6    O 0 {4,D}
 """,
     reactant2 = 
 """
@@ -1919,11 +1919,11 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,D}
-4    O 0 {3,D}
-5    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,S}
+3 *3 C 1 {1,S} {2,S} {4,S}
+4    C 0 {3,S} {5,D}
+5    O 0 {4,D}
 """,
     product2 = 
 """
@@ -1932,12 +1932,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2.08e+07,"cm^3/(mol*s)"),
+        A = (20800000.0, 'cm^3/(mol*s)'),
         n = 1.84,
-        Ea = (3.03,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (3.03, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -1964,11 +1964,11 @@ entry(
     index = 522,
     reactant1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *1 C 0 {2,S} {5,S}
-4    C 0 {2,S}
-5 *2 H 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {4,D}
+4    C 0 {3,D}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
@@ -1979,10 +1979,10 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,D}
-2    C 0 {1,D} {3,S} {4,S}
-3 *3 C 1 {2,S}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,D} {4,S}
+3    C 0 {2,D}
+4 *3 C 1 {2,S}
 """,
     product2 = 
 """
@@ -1994,12 +1994,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (4.512e-07,"cm^3/(mol*s)"),
+        A = (4.512e-07, 'cm^3/(mol*s)'),
         n = 5.77,
-        Ea = (12.04,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (12.04, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2026,10 +2026,10 @@ entry(
     index = 525,
     reactant1 = 
 """
-1 *1 C 0 {2,S} {5,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D} {4,S}
-4    C 0 {3,S}
+1 *1 C 0 {3,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {1,S} {4,D}
+4    C 0 {2,S} {3,D}
 5 *2 H 0 {1,S}
 """,
     reactant2 = 
@@ -2039,10 +2039,10 @@ entry(
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
+1    C 0 {2,S}
 2    C 0 {1,S} {3,D}
 3    C 0 {2,D} {4,S}
-4    C 0 {3,S}
+4 *3 C 1 {3,S}
 """,
     product2 = 
 """
@@ -2052,12 +2052,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (0.00346998,"cm^3/(mol*s)"),
+        A = (0.00346998, 'cm^3/(mol*s)'),
         n = 4.65,
-        Ea = (9.78,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (9.78, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2090,10 +2090,10 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,D}
-3    C 0 {2,D} {4,S}
-4    C 0 {3,S}
+1    C 0 {3,S}
+2    C 0 {4,S}
+3    C 0 {1,S} {4,D}
+4 *3 C 1 {2,S} {3,D}
 """,
     product1 = 
 """
@@ -2102,20 +2102,20 @@ entry(
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,D} {5,S}
-3    C 0 {2,D} {4,S}
-4    C 0 {3,S}
-5 *2 H 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {4,S}
+3 *1 C 0 {1,S} {4,D} {5,S}
+4    C 0 {2,S} {3,D}
+5 *2 H 0 {3,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.875,"cm^3/(mol*s)"),
+        A = (0.875, 'cm^3/(mol*s)'),
         n = 3.59,
-        Ea = (-4.03,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (-4.03, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2144,11 +2144,11 @@ entry(
     index = 529,
     reactant1 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,D}
+1 *1 C 0 {2,S} {3,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4    C 0 {3,D}
-5 *2 H 0 {2,S}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
@@ -2170,12 +2170,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.000508,"cm^3/(mol*s)"),
+        A = (0.000508, 'cm^3/(mol*s)'),
         n = 4.59,
-        Ea = (7.16,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (7.16, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2210,9 +2210,9 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,D}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4 *3 C 1 {3,D}
 """,
     product1 = 
@@ -2222,20 +2222,20 @@ entry(
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,D}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4 *1 C 0 {3,D} {5,S}
 5 *2 H 0 {4,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (2,"cm^3/(mol*s)"),
+        A = (2, 'cm^3/(mol*s)'),
         n = 3.52,
-        Ea = (-7.48,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (1500,"K"),
+        Ea = (-7.48, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (1500, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2270,9 +2270,9 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,D}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4    C 0 {3,D} {5,S}
 5 *3 O 1 {4,S}
 """,
@@ -2283,21 +2283,21 @@ entry(
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,S}
-3    C 0 {2,S} {4,D}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4    C 0 {3,D} {5,S}
 5 *1 O 0 {4,S} {6,S}
 6 *2 H 0 {5,S}
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.0699,"cm^3/(mol*s)","*|/",3),
+        A = (0.0699, 'cm^3/(mol*s)', '*|/', 3),
         n = 3.75,
-        Ea = (10.89,"kcal/mol","+|-",2),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (10.89, 'kcal/mol', '+|-', 2),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2337,9 +2337,9 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 O 1 {2,S}
+1    C 0 {2,S}
 2    O 0 {1,S} {3,S}
-3    C 0 {2,S}
+3 *3 O 1 {2,S}
 """,
     product1 = 
 """
@@ -2355,12 +2355,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.184,"cm^3/(mol*s)","*|/",3),
+        A = (0.184, 'cm^3/(mol*s)', '*|/', 3),
         n = 3.96,
-        Ea = (6.63,"kcal/mol","+|-",2),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (6.63, 'kcal/mol', '+|-', 2),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2394,17 +2394,17 @@ entry(
     index = 538,
     reactant1 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,D}
+1 *1 C 0 {2,S} {3,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,D}
 4    C 0 {3,D}
-5 *2 H 0 {2,S}
+5 *2 H 0 {1,S}
 """,
     reactant2 = 
 """
-1 *3 O 1 {2,S}
+1    C 0 {2,S}
 2    O 0 {1,S} {3,S}
-3    C 0 {2,S}
+3 *3 O 1 {2,S}
 """,
     product1 = 
 """
@@ -2422,12 +2422,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.01482,"cm^3/(mol*s)","*|/",3),
+        A = (0.01482, 'cm^3/(mol*s)', '*|/', 3),
         n = 4.313,
-        Ea = (8.016,"kcal/mol","+|-",2),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (8.016, 'kcal/mol', '+|-', 2),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2476,9 +2476,9 @@ entry(
 """,
     reactant2 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D}
-3    C 0 {2,D}
+1    C 0 {2,S} {3,D}
+2 *3 C 1 {1,S}
+3    C 0 {1,D}
 """,
     product1 = 
 """
@@ -2494,12 +2494,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (0.0351,"cm^3/(mol*s)","*|/",3),
+        A = (0.0351, 'cm^3/(mol*s)', '*|/', 3),
         n = 4.22,
-        Ea = (9.86,"kcal/mol","+|-",2),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (9.86, 'kcal/mol', '+|-', 2),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2561,12 +2561,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (0.000191,"cm^3/(mol*s)","*|/",3),
+        A = (0.000191, 'cm^3/(mol*s)', '*|/', 3),
         n = 4.25,
-        Ea = (0.81,"kcal/mol","+|-",2),
-        T0 = (1,"K"),
-        Tmin = (600,"K"),
-        Tmax = (2000,"K"),
+        Ea = (0.81, 'kcal/mol', '+|-', 2),
+        T0 = (1, 'K'),
+        Tmin = (600, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2602,33 +2602,33 @@ entry(
 """,
     reactant2 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S}
-3    C 0 {2,S}
+1    C 0 {3,S}
+2    C 0 {3,S}
+3 *3 C 1 {1,S} {2,S}
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2 *3 C 1 {1,S} {3,S} {5,S}
-3    C 0 {2,S} {4,S}
-4    O 0 {3,S}
-5    C 0 {2,S}
+1    C 0 {4,S} {5,S}
+2    C 0 {4,S}
+3    C 0 {4,S}
+4 *3 C 1 {1,S} {2,S} {3,S}
+5    O 0 {1,S}
 """,
     product2 = 
 """
-1    C 0 {2,S}
-2 *1 C 0 {1,S} {3,S} {4,S}
-3    C 0 {2,S}
-4 *2 H 0 {2,S}
+1 *1 C 0 {2,S} {3,S} {4,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *2 H 0 {1,S}
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (2.35e-06,"cm^3/(mol*s)"),
+        A = (2.35e-06, 'cm^3/(mol*s)'),
         n = 4.84,
-        Ea = (4.27,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (300,"K"),
-        Tmax = (2000,"K"),
+        Ea = (4.27, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (300, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2659,11 +2659,11 @@ entry(
     index = 1003,
     reactant1 = 
 """
-1 *1 C 0 {2,S} {5,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S}
-5 *2 H 0 {1,S}
+1 *1 C 0 {3,S} {4,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {5,D}
+4 *2 H 0 {1,S}
+5    O 0 {3,D}
 """,
     reactant2 = 
 """
@@ -2671,10 +2671,10 @@ entry(
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S}
+1    C 0 {2,S}
+2    C 0 {1,S} {3,S} {4,D}
+3 *3 C 1 {2,S}
+4    O 0 {2,D}
 """,
     product2 = 
 """
@@ -2683,12 +2683,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (132.6,"cm^3/(mol*s)"),
+        A = (132.6, 'cm^3/(mol*s)'),
         n = 3.29,
-        Ea = (-1,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-1, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2717,12 +2717,12 @@ entry(
     index = 1004,
     reactant1 = 
 """
-1 *1 C 0 {2,S} {6,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S}
-5    C 0 {4,S}
-6 *2 H 0 {1,S}
+1    C 0 {2,S} {4,S}
+2    C 0 {1,S}
+3 *1 C 0 {4,S} {5,S}
+4    C 0 {1,S} {3,S} {6,D}
+5 *2 H 0 {3,S}
+6    O 0 {4,D}
 """,
     reactant2 = 
 """
@@ -2730,11 +2730,11 @@ entry(
 """,
     product1 = 
 """
-1 *3 C 1 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S}
-5    C 0 {4,S}
+1    C 0 {2,S} {3,S}
+2    C 0 {1,S}
+3    C 0 {1,S} {4,S} {5,D}
+4 *3 C 1 {3,S}
+5    O 0 {3,D}
 """,
     product2 = 
 """
@@ -2743,12 +2743,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (399,"cm^3/(mol*s)"),
+        A = (399, 'cm^3/(mol*s)'),
         n = 3.08,
-        Ea = (-0.9433,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-0.9433, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2777,12 +2777,12 @@ entry(
     index = 1005,
     reactant1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4 *1 C 0 {2,S} {5,S} {6,S}
-5    C 0 {4,S}
-6 *2 H 0 {4,S}
+1 *1 C 0 {2,S} {4,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {4,S}
+4    C 0 {1,S} {3,S} {6,D}
+5 *2 H 0 {1,S}
+6    O 0 {4,D}
 """,
     reactant2 = 
 """
@@ -2790,11 +2790,11 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4 *3 C 1 {2,S} {5,S}
-5    C 0 {4,S}
+1    C 0 {3,S}
+2    C 0 {4,S}
+3    C 0 {1,S} {4,S} {5,D}
+4 *3 C 1 {2,S} {3,S}
+5    O 0 {3,D}
 """,
     product2 = 
 """
@@ -2803,12 +2803,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (236,"cm^3/(mol*s)"),
+        A = (236, 'cm^3/(mol*s)'),
         n = 3.15,
-        Ea = (-3.048,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-3.048, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2837,12 +2837,12 @@ entry(
     index = 1006,
     reactant1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S}
-5 *1 C 0 {4,S} {6,S}
-6 *2 H 0 {5,S}
+1    C 0 {2,S} {4,S}
+2 *1 C 0 {1,S} {5,S}
+3    C 0 {4,S}
+4    C 0 {1,S} {3,S} {6,D}
+5 *2 H 0 {2,S}
+6    O 0 {4,D}
 """,
     reactant2 = 
 """
@@ -2850,11 +2850,11 @@ entry(
 """,
     product1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S}
-5 *3 C 1 {4,S}
+1    C 0 {3,S} {4,S}
+2    C 0 {3,S}
+3    C 0 {1,S} {2,S} {5,D}
+4 *3 C 1 {1,S}
+5    O 0 {3,D}
 """,
     product2 = 
 """
@@ -2863,12 +2863,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (1.35,"cm^3/(mol*s)"),
+        A = (1.35, 'cm^3/(mol*s)'),
         n = 3.81,
-        Ea = (-2.897,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-2.897, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2897,13 +2897,13 @@ entry(
     index = 1007,
     reactant1 = 
 """
-1 *1 C 0 {2,S} {7,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S} {6,S}
-5    C 0 {4,S}
-6    C 0 {4,S}
-7 *2 H 0 {1,S}
+1    C 0 {2,S} {3,S} {5,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4 *1 C 0 {5,S} {6,S}
+5    C 0 {1,S} {4,S} {7,D}
+6 *2 H 0 {4,S}
+7    O 0 {5,D}
 """,
     reactant2 = 
 """
@@ -2925,12 +2925,12 @@ entry(
 """,
     degeneracy = 3,
     kinetics = Arrhenius(
-        A = (2568,"cm^3/(mol*s)"),
+        A = (2568, 'cm^3/(mol*s)'),
         n = 2.9,
-        Ea = (-1.0505,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-1.0505, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -2959,13 +2959,13 @@ entry(
     index = 1008,
     reactant1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4 *1 C 0 {2,S} {5,S} {6,S} {7,S}
-5    C 0 {4,S}
-6    C 0 {4,S}
-7 *2 H 0 {4,S}
+1 *1 C 0 {2,S} {3,S} {5,S} {6,S}
+2    C 0 {1,S}
+3    C 0 {1,S}
+4    C 0 {5,S}
+5    C 0 {1,S} {4,S} {7,D}
+6 *2 H 0 {1,S}
+7    O 0 {5,D}
 """,
     reactant2 = 
 """
@@ -2987,12 +2987,12 @@ entry(
 """,
     degeneracy = 1,
     kinetics = Arrhenius(
-        A = (4920,"cm^3/(mol*s)"),
+        A = (4920, 'cm^3/(mol*s)'),
         n = 2.7,
-        Ea = (-4.033,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-4.033, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -3021,13 +3021,13 @@ entry(
     index = 1009,
     reactant1 = 
 """
-1    C 0 {2,S}
-2    C 0 {1,S} {3,D} {4,S}
-3    O 0 {2,D}
-4    C 0 {2,S} {5,S} {6,S}
-5    C 0 {4,S}
-6 *1 C 0 {4,S} {7,S}
-7 *2 H 0 {6,S}
+1    C 0 {2,S} {3,S} {5,S}
+2    C 0 {1,S}
+3 *1 C 0 {1,S} {6,S}
+4    C 0 {5,S}
+5    C 0 {1,S} {4,S} {7,D}
+6 *2 H 0 {3,S}
+7    O 0 {5,D}
 """,
     reactant2 = 
 """
@@ -3049,12 +3049,12 @@ entry(
 """,
     degeneracy = 6,
     kinetics = Arrhenius(
-        A = (15.54,"cm^3/(mol*s)"),
+        A = (15.54, 'cm^3/(mol*s)'),
         n = 3.54,
-        Ea = (-2.907,"kcal/mol"),
-        T0 = (1,"K"),
-        Tmin = (500,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-2.907, 'kcal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (500, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -3109,12 +3109,12 @@ entry(
 """,
     degeneracy = 2,
     kinetics = Arrhenius(
-        A = (3610,"cm^3/(mol*s)"),
+        A = (3610, 'cm^3/(mol*s)'),
         n = 2.89,
-        Ea = (-2291,"cal/mol"),
-        T0 = (1,"K"),
-        Tmin = (700,"K"),
-        Tmax = (2000,"K"),
+        Ea = (-2291, 'cal/mol'),
+        T0 = (1, 'K'),
+        Tmin = (700, 'K'),
+        Tmax = (2000, 'K'),
     ),
     reference = None,
     referenceType = "",
@@ -3128,6 +3128,47 @@ Rate comes from quantum calculation by J. Zador at CCSD(T) level
         ("Wed Sep 12 14:33:46 2012","Shamel Merchant <shamel@mit.edu>","action","""New entry. CCCCO + OH = CCC[CH]O + H2O"""),
         ("Wed Sep 12 14:35:29 2012","Shamel Merchant <shamel@mit.edu>","action","""Changed degeneracy to 2"""),
         ("Wed Nov  7 17:13:14 2012","Connie Gao <connieg@mit.edu>","action","""Updated temperature range."""),
+    ],
+)
+
+entry(
+    index = 1011,
+    reactant1 = 
+"""
+1 C 0 {2,S} {3,S}
+2 C 0 {1,S}
+3 C 0 {1,S}
+""",
+    reactant2 = 
+"""
+1 O 1
+""",
+    product1 = 
+"""
+1 O 0
+""",
+    product2 = 
+"""
+1 C 0 {3,S}
+2 C 0 {3,S}
+3 C 1 {1,S} {2,S}
+""",
+    degeneracy = 1,
+    kinetics = Arrhenius(
+        A = (6.43216, 'm^3/(mol*s)', '*|/', 5),
+        n = 1.8405,
+        Ea = (496.102, 'J/mol'),
+        T0 = (1, 'K'),
+    ),
+    reference = None,
+    referenceType = "",
+    shortDesc = u"""User-generated average""",
+    longDesc = 
+u"""
+Bill's estimate
+""",
+    history = [
+        ("Fri Oct 18 17:18:16 2013","Connie Gao <connieg@mit.edu>","action","""New entry. Test case for rmg group meeting"""),
     ],
 )
 
